@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Abdallah-Elgamal-Portfolio/static/css/main.50b86009.css",
+    "main.js": "/Abdallah-Elgamal-Portfolio/static/js/main.54f7139e.js",
+    "static/media/Abdallah_Elgamal_Resume.pdf": "/Abdallah-Elgamal-Portfolio/static/media/Abdallah_Elgamal_Resume.81f9c4631fd39fa2f533.pdf",
+    "index.html": "/Abdallah-Elgamal-Portfolio/index.html",
+    "main.50b86009.css.map": "/Abdallah-Elgamal-Portfolio/static/css/main.50b86009.css.map",
+    "main.54f7139e.js.map": "/Abdallah-Elgamal-Portfolio/static/js/main.54f7139e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50b86009.css",
+    "static/js/main.54f7139e.js"
+  ]
+}
