@@ -1,9 +1,28 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt, FaBriefcase, FaBlog, FaListAlt, FaPaw, FaGamepad, FaCheckSquare } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaBriefcase, FaBlog, FaListAlt, FaPaw, FaGamepad, FaCheckSquare, FaDatabase } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
   const projects = [
+    {
+      id: 0,
+      title: "Decoding Management System",
+      description: "A modern web application for managing internal decoding operations, migrated from MS Access to SQL Server with a React/Next.js frontend. Features role-based access control, real-time notifications, and comprehensive audit trails for enterprise-level workflow management.",
+      technologies: ["Next.js", "React", "TypeScript", "SQL Server", "Node.js", "JWT", "Tailwind CSS", "Nodemailer"],
+      image: "decoding-system",
+      features: [
+        "Role-based Access Control (BC Users, Operations Users, Admin)",
+        "Real-time Email Notifications & Status Tracking",
+        "File Upload & Attachment Management",
+        "Comprehensive Audit Trail & Change Tracking", 
+        "Excel Export & Advanced Search Functionality",
+        "Enterprise Security with JWT Authentication",
+        "Database Migration from MS Access to SQL Server"
+      ],
+      github: "https://github.com/lgamal/Decoding",
+      live: "#",
+      icon: <FaDatabase />
+    },
     {
       id: 1,
       title: "Job Tracker",
