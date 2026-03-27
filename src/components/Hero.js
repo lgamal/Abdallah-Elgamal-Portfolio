@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 import './Hero.css';
-import resume from './Abdallah_Elgamal_Resume.pdf'
+import resume from './Abdallah-Elgamal_Resume.pdf'
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
