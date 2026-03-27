@@ -97,6 +97,20 @@
   max-width: 800px;
 }
 
+.hero-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #fbbf24;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -112,19 +126,66 @@
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 16px 32px;
+  backdrop-filter: blur(10px);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.highlight-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f59e0b;
+  line-height: 1;
+}
+
+.highlight-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.highlight-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .hero-buttons {
@@ -267,11 +328,24 @@
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .hero-highlights {
+    padding: 14px 16px;
+    gap: 0;
+  }
+
+  .highlight-item {
+    padding: 0 14px;
+  }
+
+  .highlight-number {
+    font-size: 1.3rem;
   }
 
   .hero-buttons {

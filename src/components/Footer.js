@@ -9,6 +9,7 @@ const Footer = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' }
   ];
@@ -45,8 +46,8 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Abdallah Elgamal</h3>
             <p className="footer-description">
-              Lead Software Engineer at Chubb Life Egypt, passionate about creating innovative 
-              web and mobile solutions that drive business success and enhance user experiences.
+              Lead Software Engineer &amp; Solution Architect at Chubb Life Insurance — building
+              enterprise-grade platforms in regulated financial services since 2019.
             </p>
             <div className="footer-social">
               {socialLinks.map((social, index) => (
@@ -83,12 +84,12 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-subtitle">Technical Expertise</h4>
             <div className="footer-tags">
-              <span className="footer-tag">React</span>
+              <span className="footer-tag">React / React Native</span>
               <span className="footer-tag">TypeScript</span>
-              <span className="footer-tag">Node.js</span>
-              <span className="footer-tag">Swift</span>
-              <span className="footer-tag">iOS Development</span>
-              <span className="footer-tag">Next.js</span>
+              <span className="footer-tag">Node.js / Python</span>
+              <span className="footer-tag">Swift / iOS</span>
+              <span className="footer-tag">Azure / Docker</span>
+              <span className="footer-tag">SQL Server / Oracle</span>
             </div>
           </div>
 

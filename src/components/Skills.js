@@ -1,148 +1,136 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaJs, FaCode, FaUsers, FaCog, FaRocket } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiSwift } from 'react-icons/si';
+import {
+  FaReact, FaNodeJs, FaPython, FaSwift, FaDocker, FaGitAlt, FaDatabase, FaCloud
+} from 'react-icons/fa';
+import {
+  SiTypescript, SiNextdotjs, SiRedux, SiVite, SiExpress, SiKotlin,
+  SiMicrosoftazure, SiOracle, SiPostgresql, SiMysql, SiMongodb,
+  SiKubernetes, SiFirebase, SiJira, SiPostman, SiSwagger, SiSqlite
+} from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
-  const technicalSkills = [
+  const categories = [
     {
-      name: "React",
-      level: 95,
-      icon: <FaReact />,
-      description: "Expert in building modern, scalable React applications with hooks and state management"
+      id: 'frontend',
+      label: 'Frontend',
+      color: '#1e40af',
+      skills: [
+        { name: 'React.js', icon: <FaReact /> },
+        { name: 'Next.js', icon: <SiNextdotjs /> },
+        { name: 'TypeScript', icon: <SiTypescript /> },
+        { name: 'JavaScript ES6+', icon: null },
+        { name: 'Redux / Zustand', icon: <SiRedux /> },
+        { name: 'Vite', icon: <SiVite /> },
+      ]
     },
     {
-      name: "TypeScript",
-      level: 90,
-      icon: <SiTypescript />,
-      description: "Strong typing and advanced TypeScript features for robust application development"
+      id: 'backend',
+      label: 'Backend',
+      color: '#065f46',
+      skills: [
+        { name: 'Node.js', icon: <FaNodeJs /> },
+        { name: 'Express.js', icon: <SiExpress /> },
+        { name: 'Python', icon: <FaPython /> },
+        { name: 'REST API Design', icon: null },
+        { name: 'JWT / OAuth', icon: null },
+      ]
     },
     {
-      name: "Node.js",
-      level: 88,
-      icon: <FaNodeJs />,
-      description: "Full-stack development with Node.js, Express, and backend API development"
+      id: 'mobile',
+      label: 'Mobile',
+      color: '#7c2d12',
+      skills: [
+        { name: 'React Native', icon: <FaReact /> },
+        { name: 'Swift / UIKit', icon: <FaSwift /> },
+        { name: 'Objective-C', icon: null },
+        { name: 'Kotlin (KMP)', icon: <SiKotlin /> },
+        { name: 'iOS SDK', icon: null },
+      ]
     },
     {
-      name: "Swift & iOS",
-      level: 85,
-      icon: <SiSwift />,
-      description: "Native iOS development with Swift, UIKit, and iOS app architecture patterns"
+      id: 'cloud',
+      label: 'Cloud & DevOps',
+      color: '#1e3a5f',
+      skills: [
+        { name: 'Microsoft Azure', icon: <SiMicrosoftazure /> },
+        { name: 'Oracle Cloud', icon: <SiOracle /> },
+        { name: 'Docker', icon: <FaDocker /> },
+        { name: 'Kubernetes', icon: <SiKubernetes /> },
+        { name: 'CI/CD', icon: <FaCloud /> },
+        { name: 'Git / GitHub', icon: <FaGitAlt /> },
+      ]
     },
     {
-      name: "JavaScript",
-      level: 92,
-      icon: <FaJs />,
-      description: "Advanced JavaScript ES6+, async programming, and modern web development"
+      id: 'databases',
+      label: 'Databases',
+      color: '#4a1d96',
+      skills: [
+        { name: 'SQL Server', icon: <FaDatabase /> },
+        { name: 'Oracle DB', icon: <SiOracle /> },
+        { name: 'PostgreSQL', icon: <SiPostgresql /> },
+        { name: 'MySQL', icon: <SiMysql /> },
+        { name: 'MongoDB', icon: <SiMongodb /> },
+        { name: 'SQLite / Core Data', icon: <SiSqlite /> },
+      ]
     },
     {
-      name: "Next.js",
-      level: 87,
-      icon: <SiNextdotjs />,
-      description: "Server-side rendering, static generation, and full-stack Next.js applications"
+      id: 'tools',
+      label: 'Tools & Platforms',
+      color: '#92400e',
+      skills: [
+        { name: 'Firebase', icon: <SiFirebase /> },
+        { name: 'JIRA', icon: <SiJira /> },
+        { name: 'Postman', icon: <SiPostman /> },
+        { name: 'Swagger', icon: <SiSwagger /> },
+        { name: 'GitLab', icon: <FaGitAlt /> },
+      ]
     }
   ];
 
-  const softSkills = [
-    {
-      name: "Technical Leadership",
-      level: 92,
-      icon: <FaRocket />,
-      description: "Leading technical teams and making architectural decisions in enterprise environments"
-    },
-    {
-      name: "Problem Solving",
-      level: 95,
-      icon: <FaCog />,
-      description: "Analytical thinking and creative solutions for complex technical challenges"
-    },
-    {
-      name: "Team Collaboration",
-      level: 90,
-      icon: <FaUsers />,
-      description: "Cross-functional collaboration and mentoring junior developers"
-    },
-    {
-      name: "System Architecture",
-      level: 88,
-      icon: <FaCode />,
-      description: "Designing scalable, maintainable software architectures and technical strategy"
-    }
+  const coreCompetencies = [
+    'Solution Architecture',
+    'Full-Stack Development',
+    'Cross-Platform Mobile',
+    'Regulatory Compliance (FRA)',
+    'System Integration & APIs',
+    'Technical Leadership',
+    'Database Design',
+    'Agile Delivery',
+    'Digital Transformation',
+    'Code Review & Mentoring',
   ];
-
-  const SkillCard = ({ skill, index }) => (
-    <div className="skill-card card" style={{ animationDelay: `${index * 0.1}s` }}>
-      <div className="skill-header">
-        <div className="skill-icon">
-          {skill.icon}
-        </div>
-        <div className="skill-info">
-          <h4 className="skill-name">{skill.name}</h4>
-          <p className="skill-description">{skill.description}</p>
-        </div>
-      </div>
-      
-      <div className="skill-progress">
-        <div className="progress-bar">
-          <div 
-            className="progress-fill" 
-            style={{ width: `${skill.level}%` }}
-          ></div>
-        </div>
-        <span className="progress-percentage">{skill.level}%</span>
-      </div>
-    </div>
-  );
 
   return (
     <section id="skills" className="skills section">
       <div className="container">
-        <h2 className="section-title">Skills & Expertise</h2>
-        
-        <div className="skills-content">
-          <div className="skills-category">
-            <h3 className="category-title">
-              <span className="category-icon">💻</span>
-              Technical Skills
-            </h3>
-            <div className="skills-grid">
-              {technicalSkills.map((skill, index) => (
-                <SkillCard key={skill.name} skill={skill} index={index} />
-              ))}
-            </div>
-          </div>
+        <h2 className="section-title">Skills & Technologies</h2>
 
-          <div className="skills-category">
-            <h3 className="category-title">
-              <span className="category-icon">🎯</span>
-              Leadership & Soft Skills
-            </h3>
-            <div className="skills-grid">
-              {softSkills.map((skill, index) => (
-                <SkillCard key={skill.name} skill={skill} index={index + 6} />
-              ))}
+        <div className="skills-grid-categories">
+          {categories.map((cat) => (
+            <div key={cat.id} className="skill-category-card card">
+              <div className="skill-category-header" style={{ borderColor: cat.color }}>
+                <span className="skill-category-dot" style={{ background: cat.color }}></span>
+                <h3 className="skill-category-title">{cat.label}</h3>
+              </div>
+              <div className="skill-tags">
+                {cat.skills.map((skill, i) => (
+                  <span key={i} className="skill-tag" style={{ '--cat-color': cat.color }}>
+                    {skill.icon && <span className="skill-tag-icon">{skill.icon}</span>}
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
 
-        <div className="skills-summary">
-          <div className="summary-card card">
-            <h3 className="summary-title">Professional Expertise</h3>
-            <p className="summary-text">
-              As a Lead Software Engineer, I combine deep technical expertise in modern web and mobile 
-              technologies with strong leadership skills. My experience spans from building responsive 
-              React applications and TypeScript-based systems to developing native iOS apps with Swift. 
-              I excel at leading technical teams, making architectural decisions, and delivering 
-              high-quality solutions in enterprise environments.
-            </p>
-            <div className="competency-tags">
-              <span className="tag">Full-Stack Development</span>
-              <span className="tag">iOS Development</span>
-              <span className="tag">Technical Leadership</span>
-              <span className="tag">System Architecture</span>
-              <span className="tag">Agile Methodologies</span>
-              <span className="tag">Code Review & Mentoring</span>
-            </div>
+        <div className="skills-competencies card">
+          <h3 className="competencies-heading">Core Competencies</h3>
+          <div className="competency-tags">
+            {coreCompetencies.map((c, i) => (
+              <span key={i} className="tag">{c}</span>
+            ))}
           </div>
         </div>
       </div>
@@ -150,4 +138,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

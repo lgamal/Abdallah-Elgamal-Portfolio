@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated": "2026-03-28",
+    "author": "Abdallah Elgamal",
+    "github": "https://github.com/lgamal",
+    "portfolio": "https://lgamal.github.io/Abdallah-Elgamal-Portfolio"
+  },
+  "projects": [
+    {
+      "id": "agency-digital-platform",
+      "title": "Agency Digital Application Platform",
+      "category": "production",
+      "status": "delivered-pending-fra",
+      "shortDescription": "Nationwide React Native platform for insurance agents to submit digital life insurance applications, integrated with the Life Core System.",
+      "detailedDescription": "Led end-to-end architecture and delivery of a nationwide Agency Digital Application Platform used by insurance agents across Egypt. Fully integrated with the Life Core System. Defined system architecture, API contracts, data models, security standards, and integration strategies. Coordinated Mobile App teams, Life Core System teams, Actuarial, Operations, Sales, and external vendors.",
+      "technologies": ["React Native", "Node.js", "REST API", "SQL Server", "JWT", "Azure", "JIRA"],
+      "achievements": [
+        "Nationwide deployment for Egyptian insurance agents",
+        "Full integration with Life Core System",
+        "Delivered on-time with multi-team coordination",
+        "Pending FRA (Financial Regulatory Authority) approval"
+      ],
+      "repoType": "private",
+      "github": null,
+      "liveUrl": null,
+      "company": "Chubb Life Insurance",
+      "period": "2025"
+    },
+    {
+      "id": "group-insurance-system",
+      "title": "Group Insurance Full-Stack System",
+      "category": "production",
+      "status": "uat-complete",
+      "shortDescription": "Full-stack Group Insurance management system covering the complete insurance lifecycle — Sales, Underwriting, Operations, Claims, Collections, and Actuarial.",
+      "detailedDescription": "Designed and developed a comprehensive Full-Stack Group Insurance System using React.js, TypeScript, Node.js, Express.js, and SQL Server. Architected the database schema, REST APIs, and end-to-end business workflows. Implemented role-based workflows covering the full insurance lifecycle. Led UAT phase with business stakeholder sign-off.",
+      "technologies": ["React.js", "TypeScript", "Node.js", "Express.js", "SQL Server", "JWT", "REST API"],
+      "achievements": [
+        "Covers 6 departments: Sales, Underwriting, Operations, Claims, Collections, Actuarial",
+        "UAT completed with stakeholder sign-off",
+        "Full database schema architecture and REST API design",
+        "Financial reports for management and actuarial"
+      ],
+      "repoType": "private",
+      "github": null,
+      "liveUrl": null,
+      "company": "Chubb Life Insurance",
+      "period": "2022-2025"
+    },
+    {
+      "id": "fra-compliance-system",
+      "title": "FRA Regulatory Compliance System",
+      "category": "production",
+      "status": "live",
+      "shortDescription": "Python-based data pipeline validating, transforming, and securely submitting insurance data to the Egyptian Financial Regulatory Authority.",
+      "detailedDescription": "Designed and developed multiple Python-based applications with database integration to validate, transform, and submit insurance data. Integrated securely with FRA REST APIs (GET/POST), including authentication, authorization, logging, and audit trails. Streamlined regulatory reporting workflows, reducing manual processing and operational risk.",
+      "technologies": ["Python", "REST API", "OAuth", "PostgreSQL", "SQL Server", "Audit Logging", "JWT"],
+      "achievements": [
+        "Secure FRA REST API integration with full auth and audit trails",
+        "Automated data validation and transformation pipeline",
+        "Eliminated manual regulatory reporting workflows",
+        "Reduced operational risk for FRA compliance"
+      ],
+      "repoType": "private",
+      "github": null,
+      "liveUrl": null,
+      "company": "Chubb Life Insurance",
+      "period": "2022-2025"
+    },
+    {
+      "id": "decoding-management-system",
+      "title": "Decoding Management System",
+      "category": "advanced",
+      "status": "complete",
+      "shortDescription": "Enterprise web app migrating internal decoding operations from MS Access to SQL Server with a React/Next.js frontend, RBAC, and audit trails.",
+      "detailedDescription": "A modern web application for managing internal decoding operations, migrated from MS Access to SQL Server with a React/Next.js frontend. Features role-based access control, real-time notifications, and comprehensive audit trails for enterprise-level workflow management.",
+      "technologies": ["Next.js", "React", "TypeScript", "SQL Server", "Node.js", "JWT", "Tailwind CSS", "Nodemailer"],
+      "achievements": [
+        "Role-based Access Control (BC Users, Operations Users, Admin)",
+        "Real-time Email Notifications & Status Tracking",
+        "File Upload & Attachment Management",
+        "Database Migration from MS Access to SQL Server",
+        "Excel Export & Advanced Search Functionality"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/Decoding",
+      "liveUrl": null
+    },
+    {
+      "id": "blog-cms",
+      "title": "Blog CMS",
+      "category": "advanced",
+      "status": "complete",
+      "shortDescription": "TypeScript/Next.js content management system with rich text editing, media management, SEO, and admin dashboard.",
+      "detailedDescription": "A modern Content Management System built with TypeScript and Next.js for creating, editing, and managing blog content. Features a powerful admin interface with rich text editing and media management capabilities.",
+      "technologies": ["TypeScript", "Next.js", "React", "Node.js", "CSS Modules"],
+      "achievements": [
+        "Rich Text Editor Integration",
+        "Media Upload & Management",
+        "SEO Optimization Features",
+        "User Authentication & Authorization",
+        "Responsive Admin Dashboard"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/my-blog-cms",
+      "liveUrl": null
+    },
+    {
+      "id": "job-tracker",
+      "title": "Job Tracker",
+      "category": "learning",
+      "status": "complete",
+      "shortDescription": "React app for tracking job applications, interview schedules, and job search organization.",
+      "detailedDescription": "A comprehensive React application for tracking job applications, managing interview schedules, and organizing the job search process.",
+      "technologies": ["React", "JavaScript", "CSS3", "Local Storage"],
+      "achievements": [
+        "Application Status Tracking",
+        "Interview Schedule Management",
+        "Search and Filter Functionality",
+        "Data Persistence with Local Storage"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/job-tracker",
+      "liveUrl": null
+    },
+    {
+      "id": "ios-checklist",
+      "title": "iOS Checklist",
+      "category": "advanced",
+      "status": "complete",
+      "shortDescription": "Native iOS task management app with Swift/UIKit, Core Data persistence, and due date warnings.",
+      "detailedDescription": "A native iOS task management application built with Swift and UIKit. Features comprehensive task tracking with status updates, priority management, and a clean, iOS-native user interface.",
+      "technologies": ["Swift", "UIKit", "Core Data", "iOS SDK", "MVC Architecture"],
+      "achievements": [
+        "Native iOS task management with Core Data persistence",
+        "Status tracking with due date warnings",
+        "Priority level assignment",
+        "Native iOS MVC design patterns"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/IOS-Checklist",
+      "liveUrl": null
+    },
+    {
+      "id": "bullseye-game",
+      "title": "BullsEye Game",
+      "category": "learning",
+      "status": "complete",
+      "shortDescription": "Swift/UIKit iOS guessing game with slider controls, score tracking, and smooth animations.",
+      "detailedDescription": "An engaging iOS guessing game built with Swift and UIKit. Players test their precision by guessing numbers within a target range.",
+      "technologies": ["Swift", "UIKit", "Core Animation", "iOS SDK"],
+      "achievements": [
+        "Interactive Slider Controls",
+        "Score Calculation System",
+        "Smooth UI Animations",
+        "Multiple Difficulty Levels"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/BullsEye",
+      "liveUrl": null
+    },
+    {
+      "id": "pets-appointments",
+      "title": "Pet Appointments",
+      "category": "learning",
+      "status": "complete",
+      "shortDescription": "React appointment scheduling system for veterinary clinics with pet profiles and calendar integration.",
+      "detailedDescription": "A React-based appointment scheduling system designed for veterinary clinics and pet care services.",
+      "technologies": ["React", "JavaScript", "CSS3", "Date Management", "Form Validation"],
+      "achievements": [
+        "Appointment Scheduling Interface",
+        "Pet Profile Management",
+        "Service Type Selection",
+        "Appointment Confirmation System"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/pets-appointments",
+      "liveUrl": null
+    },
+    {
+      "id": "my-todos",
+      "title": "My Todos",
+      "category": "learning",
+      "status": "complete",
+      "shortDescription": "Fast Vite-based todo app with priority levels, completion tracking, and local persistence.",
+      "detailedDescription": "A fast and efficient todo application built with Vite for lightning-fast development and build times.",
+      "technologies": ["JavaScript", "Vite", "CSS3", "HTML5", "PWA"],
+      "achievements": [
+        "Fast Task Creation & Editing",
+        "Priority Level Management",
+        "Completion Status Tracking",
+        "Lightning-Fast Performance with Vite"
+      ],
+      "repoType": "public",
+      "github": "https://github.com/lgamal/my-todos",
+      "liveUrl": null
+    }
+  ],
+  "suggestedProjectsToBuild": [
+    {
+      "title": "Insurance Quote Calculator API",
+      "rationale": "Showcases domain expertise in insurance + Node.js/Python backend skills",
+      "technologies": ["Node.js", "Express.js", "TypeScript", "PostgreSQL", "REST API"]
+    },
+    {
+      "title": "React Native Insurance Agent Demo",
+      "rationale": "Public demo version of the Agency Platform concept — shows cross-platform mobile architecture",
+      "technologies": ["React Native", "Expo", "TypeScript", "Node.js"]
+    },
+    {
+      "title": "Regulatory Data Pipeline (Open Source)",
+      "rationale": "Generic FRA-style data validation pipeline to demonstrate compliance system design",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker"]
+    },
+    {
+      "title": "Architecture Decision Records (ADR) Repo",
+      "rationale": "Documents architectural decisions made in enterprise systems — great for FAANG positioning",
+      "technologies": ["Markdown", "GitHub"]
+    }
+  ]
+}
