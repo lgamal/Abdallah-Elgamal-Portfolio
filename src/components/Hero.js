@@ -5,9 +5,10 @@ import resume from './Abdallah-Elgamal_Resume.pdf';
 
 const TITLES = [
   'Lead Software Engineer',
-  'Solution Architect',
-  'Full-Stack Developer',
-  'Mobile App Engineer',
+  'Solutions Architect',
+  'iOS & Mobile Engineer',
+  'Full-Stack & Backend Dev',
+  'Enterprise Systems Builder',
 ];
 
 const Hero = () => {
@@ -63,9 +64,11 @@ const Hero = () => {
             </div>
 
             <p className="hero-description">
-              6+ years architecting enterprise platforms for regulated financial services.
-              From FRA-compliant data pipelines to nationwide React Native insurance apps —
-              I build systems that scale, comply, and last.
+              6+ years designing and delivering enterprise-grade systems in regulated financial
+              services — across iOS native (Swift / SwiftUI / UIKit), cross-platform mobile
+              (KMP / React Native), full-stack web (React / Next.js / TypeScript), backend
+              (Python / Node.js), and databases (SQL Server / Oracle PLSQL / PostgreSQL).
+              I own projects end-to-end: architecture, delivery, and compliance.
             </p>
 
             <div className="hero-location">
@@ -123,16 +126,16 @@ const Hero = () => {
               <img src={`${process.env.PUBLIC_URL}/abdallah-photo.png`} alt="Abdallah Elgamal" className="hero-photo" />
             </div>
             <div className="photo-badge photo-badge-1">
-              <span className="pb-icon">⚡</span>
-              <span>React Native</span>
+              <span className="pb-icon">📱</span>
+              <span>iOS · KMP · Mobile</span>
             </div>
             <div className="photo-badge photo-badge-2">
               <span className="pb-icon">🏗️</span>
-              <span>Solution Arch.</span>
+              <span>Solutions Architect</span>
             </div>
             <div className="photo-badge photo-badge-3">
               <span className="pb-icon">🔒</span>
-              <span>FRA Compliant</span>
+              <span>FRA · Enterprise</span>
             </div>
           </div>
 
