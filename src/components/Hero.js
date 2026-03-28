@@ -120,7 +120,7 @@ const Hero = () => {
             <div className="photo-ring photo-ring-outer"></div>
             <div className="photo-ring photo-ring-inner"></div>
             <div className="photo-frame">
-              <img src="/abdallah-photo.png" alt="Abdallah Elgamal" className="hero-photo" />
+              <img src={`${process.env.PUBLIC_URL}/abdallah-photo.png`} alt="Abdallah Elgamal" className="hero-photo" />
             </div>
             <div className="photo-badge photo-badge-1">
               <span className="pb-icon">⚡</span>
