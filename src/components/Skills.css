@@ -1,49 +1,57 @@
+/* ── SKILLS ──────────────────────────────────────────────────────── */
 .skills {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(160deg, #f8fafc 0%, #eff6ff 100%);
 }
 
-/* Category grid */
+/* ── CATEGORY GRID ───────────────────────────────────────────────── */
 .skills-grid-categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin-bottom: 2.5rem;
 }
 
 .skill-category-card {
+  background: #ffffff;
+  border-radius: 16px;
   padding: 1.5rem;
-  background: white;
   border: 1px solid #e2e8f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+  border-color: #c7d2fe;
 }
 
 .skill-category-header {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
   padding-bottom: 0.8rem;
   border-bottom: 2px solid;
 }
 
 .skill-category-dot {
-  width: 10px;
-  height: 10px;
+  width: 10px; height: 10px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
 .skill-category-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #1e293b;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #0f172a;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.45rem;
 }
 
 .skill-tag {
@@ -51,19 +59,20 @@
   align-items: center;
   gap: 0.35rem;
   padding: 5px 11px;
-  background: #f1f5f9;
+  background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #334155;
   transition: all 0.2s ease;
 }
 
 .skill-tag:hover {
-  background: #e2e8f0;
+  background: #eff6ff;
   border-color: var(--cat-color, #1e40af);
   color: var(--cat-color, #1e40af);
+  transform: translateY(-1px);
 }
 
 .skill-tag-icon {
@@ -73,68 +82,56 @@
   color: var(--cat-color, #1e40af);
 }
 
-/* Competencies */
+/* ── COMPETENCIES ────────────────────────────────────────────────── */
 .skills-competencies {
   padding: 2rem 2.5rem;
   text-align: center;
-  background: white;
-  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #0a0f1e, #0d1b3e);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 16px;
 }
 
 .competencies-heading {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
   margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
 }
 
 .competency-tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .tag {
-  background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
-  color: white;
-  padding: 0.45rem 1rem;
-  border-radius: 20px;
-  font-size: 0.88rem;
+  background: rgba(59,130,246,0.15);
+  border: 1px solid rgba(59,130,246,0.3);
+  color: #93c5fd;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.82rem;
   font-weight: 500;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .tag:hover {
+  background: rgba(59,130,246,0.25);
+  color: #bfdbfe;
   transform: translateY(-2px);
 }
 
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .skills-grid-categories {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .skills-grid-categories { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-  .skills-grid-categories {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .skill-category-card {
-    padding: 1.2rem;
-  }
-
-  .skills-competencies {
-    padding: 1.5rem;
-  }
-
-  .tag {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .competency-tags {
-    gap: 0.5rem;
-  }
+  .skills-grid-categories { grid-template-columns: 1fr; gap: 1rem; }
+  .skill-category-card { padding: 1.2rem; }
+  .skills-competencies { padding: 1.5rem; }
+  .tag { font-size: 0.78rem; }
+  .competency-tags { gap: 0.4rem; }
 }

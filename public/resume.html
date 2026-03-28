@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdallah Elgamal – Lead Software Engineer Resume</title>
+  <style>
+    /* ── PRINT & SCREEN ─────────────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue:   #1e40af;
+      --dark:   #0f172a;
+      --text:   #1e293b;
+      --muted:  #475569;
+      --light:  #f1f5f9;
+      --border: #e2e8f0;
+      --accent: #f59e0b;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 9.5pt;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.45;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 32px;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────────────── */
+    .header { margin-bottom: 16px; padding-bottom: 14px; border-bottom: 2px solid var(--blue); }
+    .header-top { display: flex; justify-content: space-between; align-items: flex-start; }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-size: 11pt;
+      color: var(--blue);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .contact-block {
+      text-align: right;
+      font-size: 8.5pt;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .contact-block a { color: var(--blue); text-decoration: none; }
+
+    /* ── SECTION ─────────────────────────────────────────────────── */
+    .section { margin-bottom: 14px; }
+
+    .section-heading {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 9px;
+    }
+
+    /* ── SUMMARY ─────────────────────────────────────────────────── */
+    .summary {
+      font-size: 9.5pt;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    /* ── EXPERIENCE ──────────────────────────────────────────────── */
+    .job { margin-bottom: 13px; }
+    .job:last-child { margin-bottom: 0; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .job-title { font-weight: 700; font-size: 10pt; color: var(--dark); }
+    .job-period { font-size: 8.5pt; color: var(--muted); white-space: nowrap; }
+    .job-company { font-size: 9pt; color: var(--blue); font-weight: 600; margin-bottom: 5px; }
+
+    .job ul { list-style: none; padding: 0; }
+    .job li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 9pt;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 3px;
+    }
+    .job li::before { content: '•'; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
+
+    .job-tag-row { margin-top: 5px; display: flex; flex-wrap: wrap; gap: 4px; }
+    .job-tag {
+      font-size: 7.5pt;
+      padding: 1px 7px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    /* ── SKILLS ──────────────────────────────────────────────────── */
+    .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 24px; }
+    .skill-row { display: flex; gap: 6px; align-items: baseline; }
+    .skill-label { font-weight: 700; font-size: 8.5pt; color: var(--dark); min-width: 110px; flex-shrink: 0; }
+    .skill-value { font-size: 8.5pt; color: var(--muted); }
+
+    /* ── PROJECTS ────────────────────────────────────────────────── */
+    .project { margin-bottom: 9px; }
+    .project-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .project-name { font-weight: 700; font-size: 9.5pt; color: var(--dark); }
+    .project-tag { font-size: 7.5pt; color: var(--blue); font-weight: 600; }
+    .project-stack { font-size: 8pt; color: var(--muted); margin: 1px 0 3px; }
+    .project-desc { font-size: 8.5pt; color: var(--muted); line-height: 1.5; }
+
+    /* ── CERTS ───────────────────────────────────────────────────── */
+    .certs-list { columns: 2; list-style: none; padding: 0; gap: 16px; }
+    .certs-list li {
+      font-size: 8.5pt;
+      color: var(--muted);
+      padding-left: 12px;
+      position: relative;
+      margin-bottom: 4px;
+      break-inside: avoid;
+    }
+    .certs-list li::before { content: '✓'; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
+
+    /* ── AWARD BANNER ────────────────────────────────────────────── */
+    .award-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #92400e;
+      margin-bottom: 10px;
+    }
+
+    /* ── PRINT ───────────────────────────────────────────────────── */
+    @media print {
+      body { padding: 0; max-width: none; }
+      .no-print { display: none; }
+      a { text-decoration: none; }
+    }
+
+    /* ── PRINT BUTTON ────────────────────────────────────────────── */
+    .print-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 20px;
+      padding: 10px 24px;
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .print-btn:hover { opacity: 0.9; }
+    @media print { .print-btn { display: none; } }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn no-print" onclick="window.print()">⬇ Save as PDF (Print → Save as PDF)</button>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <h1>ABDALLAH ELGAMAL</h1>
+        <div class="tagline">Lead Software Engineer &amp; Solution Architect</div>
+      </div>
+      <div class="contact-block">
+        Cairo, Egypt<br />
+        +20 111 407 6919<br />
+        <a href="mailto:abdallahabdelaziiz@gmail.com">abdallahabdelaziiz@gmail.com</a><br />
+        <a href="https://linkedin.com/in/abdallahabdelaziiz">linkedin.com/in/abdallahabdelaziiz</a><br />
+        <a href="https://github.com/lgamal">github.com/lgamal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AWARD -->
+  <div class="award-banner">🏆 Most Innovative Employee of the Year 2024 — Chubb Life Insurance</div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-heading">Professional Summary</div>
+    <p class="summary">
+      Lead Software Engineer with 6+ years of experience delivering enterprise-grade platforms in regulated financial services.
+      Specializes in full-stack development (React.js, TypeScript, Node.js), cross-platform mobile (React Native, Swift),
+      solution architecture, and regulatory compliance (Egyptian FRA). Proven track record owning end-to-end delivery of
+      nationwide production systems — from architecture and API design to UAT sign-off and stakeholder alignment.
+      Experienced in mentoring engineers and coordinating multi-team delivery in Agile environments.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-heading">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Lead Software Engineer</span>
+        <span class="job-period">Apr 2025 – Present</span>
+      </div>
+      <div class="job-company">Chubb Life Insurance · Cairo, Egypt</div>
+      <ul>
+        <li>Owned end-to-end architecture and delivery of a nationwide Agency Digital Application Platform (React Native), fully integrated with the Life Core System — pending FRA regulatory approval.</li>
+        <li>Defined system architecture, API contracts, data models, security standards, and integration strategies for enterprise insurance platforms.</li>
+        <li>Coordinated Mobile App, Life Core System, Actuarial, Operations, Sales teams, and external vendors; planned delivery milestones using JIRA.</li>
+        <li>Mentored junior engineers and fresh graduates, enforcing coding standards, architecture consistency, and delivery best practices.</li>
+      </ul>
+      <div class="job-tag-row">
+        <span class="job-tag">React Native</span>
+        <span class="job-tag">Node.js</span>
+        <span class="job-tag">SQL Server</span>
+        <span class="job-tag">Azure</span>
+        <span class="job-tag">REST API</span>
+        <span class="job-tag">JIRA</span>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Software Engineer</span>
+        <span class="job-period">Apr 2022 – Mar 2025</span>
+      </div>
+      <div class="job-company">Chubb Life Insurance · Cairo, Egypt</div>
+      <ul>
+        <li>Led FRA compliance systems: Python-based data pipelines validating, transforming, and securely submitting insurance data to the Egyptian Financial Regulatory Authority via authenticated REST APIs.</li>
+        <li>Designed and delivered a Full-Stack Group Insurance System (React.js, TypeScript, Node.js, SQL Server) covering Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial — from DB schema to UAT sign-off.</li>
+        <li>Built complex SQL queries and financial reports for management, actuarial, and operational analysis.</li>
+        <li>Delivered full Arabic website version; developed multiple Python automation tools for Finance, Operations, Claims, and Training departments.</li>
+        <li>Contributed to software architecture decisions, data governance, and integration standards.</li>
+      </ul>
+      <div class="job-tag-row">
+        <span class="job-tag">React.js</span>
+        <span class="job-tag">TypeScript</span>
+        <span class="job-tag">Node.js</span>
+        <span class="job-tag">Python</span>
+        <span class="job-tag">SQL Server</span>
+        <span class="job-tag">Oracle DB</span>
+        <span class="job-tag">JWT / OAuth</span>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-period">May 2019 – Mar 2022</span>
+      </div>
+      <div class="job-company">Chubb Life Insurance · Cairo, Egypt</div>
+      <ul>
+        <li>Developed and maintained enterprise applications using Python, Swift (iOS), VB.NET, and SQL.</li>
+        <li>Built iOS applications using Firebase for authentication and backend services.</li>
+        <li>Created Excel Power Query and VBA automation tools to streamline reporting workflows.</li>
+        <li>Collaborated in Agile teams on development, testing, documentation, and production support.</li>
+      </ul>
+      <div class="job-tag-row">
+        <span class="job-tag">Python</span>
+        <span class="job-tag">Swift</span>
+        <span class="job-tag">UIKit</span>
+        <span class="job-tag">Firebase</span>
+        <span class="job-tag">VB.NET</span>
+        <span class="job-tag">VBA</span>
+        <span class="job-tag">SQL</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-heading">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-label">Frontend:</span>
+        <span class="skill-value">React.js, Next.js, TypeScript, JavaScript ES6+, Vite, Redux, Zustand</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Mobile:</span>
+        <span class="skill-value">React Native, Swift, UIKit, Objective-C, Kotlin Multiplatform (KMP)</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Backend:</span>
+        <span class="skill-value">Node.js, Express.js, Python, REST API Design, JWT, OAuth</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Databases:</span>
+        <span class="skill-value">SQL Server, Oracle DB, PostgreSQL, MySQL, MongoDB</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Cloud &amp; DevOps:</span>
+        <span class="skill-value">Microsoft Azure, Oracle Cloud, Docker, Kubernetes, CI/CD, Git</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Tools:</span>
+        <span class="skill-value">JIRA, Postman, Swagger, Firebase, GitHub, GitLab</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY PROJECTS -->
+  <div class="section">
+    <div class="section-heading">Key Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Agency Digital Application Platform</span>
+        <span class="project-tag">Production · FRA-Pending · Private</span>
+      </div>
+      <div class="project-stack">React Native · Node.js · SQL Server · JWT · Azure</div>
+      <div class="project-desc">Nationwide platform for insurance agents across Egypt to submit digital life insurance applications, integrated with Life Core System. Delivered end-to-end — pending FRA approval.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Group Insurance Full-Stack System</span>
+        <span class="project-tag">Production · UAT Complete · Private</span>
+      </div>
+      <div class="project-stack">React.js · TypeScript · Node.js · Express.js · SQL Server</div>
+      <div class="project-desc">Full-stack insurance management system covering Sales, Underwriting, Operations, Claims, Collections, and Actuarial workflows.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">WokoERP — Multi-Tenant SaaS ERP</span>
+        <span class="project-tag">github.com/lgamal/WokoERP</span>
+      </div>
+      <div class="project-stack">React 18 · TypeScript · Node.js · SQL Server · Tailwind CSS</div>
+      <div class="project-desc">Production-ready multi-tenant ERP SaaS with 10+ modules: HR, Finance, Sales, Inventory, CRM, Procurement, VAT, Billing, and SuperAdmin panel.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Mafrouza — Arabic KMP E-Commerce App</span>
+        <span class="project-tag">github.com/lgamal/Mafrouza</span>
+      </div>
+      <div class="project-stack">Kotlin Multiplatform · Compose Multiplatform · Android · iOS</div>
+      <div class="project-desc">Arabic-first RTL e-commerce app for Egyptian food delivery targeting both Android and iOS from a single Kotlin codebase.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Egypt Sports Medical Platform</span>
+        <span class="project-tag">github.com/lgamal/egypt-sports-medical-platform</span>
+      </div>
+      <div class="project-stack">Node.js · Express.js · PostgreSQL · React · Vite · RBAC</div>
+      <div class="project-desc">Digital platform for mandatory medical examinations for football players under the Egyptian Ministry of Youth and Sports, with multi-role RBAC (Ministry, Clubs, Hospitals).</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-heading">Certifications</div>
+    <ul class="certs-list">
+      <li>Microsoft Azure Fundamentals — AZ-900</li>
+      <li>Microsoft Azure Data Fundamentals — DP-900</li>
+      <li>Oracle Cloud Infrastructure Foundations</li>
+      <li>Oracle Cloud Infrastructure Data Foundations</li>
+      <li>75+ LinkedIn Learning Courses</li>
+    </ul>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-heading">Education</div>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Bachelor of Business Technology</span>
+        <span class="job-period">Graduated 2019</span>
+      </div>
+      <div class="job-company">Canadian International College (CIC) · Cairo, Egypt</div>
+      <ul><li>A+ Graduation Project — Football match ticket booking mobile application</li></ul>
+    </div>
+  </div>
+
+</body>
+</html>

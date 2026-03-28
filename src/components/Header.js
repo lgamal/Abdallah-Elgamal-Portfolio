@@ -6,40 +6,55 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setIsMobileMenuOpen(false);
   };
+
+  const navLinks = [
+    { label: 'About',      id: 'about' },
+    { label: 'Skills',     id: 'skills' },
+    { label: 'Experience', id: 'experience' },
+    { label: 'Projects',   id: 'projects' },
+  ];
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="nav-content">
+          {/* Logo */}
+          <button className="nav-logo" onClick={() => scrollToSection('home')}>
+            AE<span>.</span>
+          </button>
+
+          {/* Nav */}
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
             <ul className="nav-list">
-              <li><button onClick={() => scrollToSection('home')} className="nav-link">Home</button></li>
-              <li><button onClick={() => scrollToSection('about')} className="nav-link">About</button></li>
-              <li><button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button></li>
-              <li><button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button></li>
-              <li><button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button></li>
-              <li><button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button></li>
+              {navLinks.map(({ label, id }) => (
+                <li key={id}>
+                  <button onClick={() => scrollToSection(id)} className="nav-link">
+                    {label}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button onClick={() => scrollToSection('contact')} className="nav-link nav-link-cta">
+                  Contact
+                </button>
+              </li>
             </ul>
           </nav>
 
-          <button 
+          {/* Hamburger */}
+          <button
             className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             <span></span>
             <span></span>
@@ -51,4 +66,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
