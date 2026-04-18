@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   FaGithub, FaExternalLinkAlt, FaBriefcase, FaBlog, FaListAlt,
   FaPaw, FaGamepad, FaCheckSquare, FaDatabase, FaMobile,
-  FaShieldAlt, FaBuilding, FaShoppingCart, FaHospital
+  FaShieldAlt, FaBuilding, FaShoppingCart, FaHospital, FaEnvelope
 } from 'react-icons/fa';
 import './Projects.css';
 
@@ -74,6 +74,31 @@ const Projects = () => {
       live: null,
       icon: <FaShieldAlt />,
       iconBg: 'linear-gradient(135deg,#7c2d12,#0f172a)',
+      private: true,
+    },
+
+    {
+      id: 'pss-email-sender',
+      badge: 'Production · Internal Tool',
+      badgeColor: '#10b981',
+      filter: 'Production',
+      title: 'PSS Email Sender',
+      subtitle: 'Policy Document Automation Platform · Chubb Life Egypt',
+      description:
+        'Internally developed desktop-based automation platform that transforms end-to-end policy document delivery — replacing a manual, error-prone workflow with a fully automated matching, packaging, and email-sending pipeline. Built entirely in-house by the IT Department at zero third-party cost.',
+      technologies: ['React', 'Python', 'Flask', 'MS Access', 'REST API', 'RBAC', 'Crystal Reports', 'eBao Integration'],
+      achievements: [
+        'Automated full policy-to-customer email delivery in a single click — reads eBao Crystal Report output, matches PDFs, attaches brochures, sends personalised emails',
+        'Role-based access control: Admin, Operator (New Business), and Viewer (Manager) with full audit trail per batch',
+        'Complete audit log: policy code, customer name, product, status, timestamp, and operator — enabling compliance traceability',
+        'Manager reconciliation dashboard with date/user filtering and live success rate for month-end closing',
+        'Admin control panel for folder paths, email templates, CC/BCC, and product-to-PDF mapping — no code changes required',
+        'Arabic RTL + English LTR email support; one-click Excel export of filtered history records',
+      ],
+      github: null,
+      live: null,
+      icon: <FaEnvelope />,
+      iconBg: 'linear-gradient(135deg,#065f46,#0f172a)',
       private: true,
     },
 

@@ -64,7 +64,7 @@ const Hero = () => {
             </div>
 
             <p className="hero-description">
-              6+ years designing and delivering enterprise-grade systems in regulated financial
+              7+ years designing and delivering enterprise-grade systems in regulated financial
               services — across iOS native (Swift / SwiftUI / UIKit), cross-platform mobile
               (KMP / React Native), full-stack web (React / Next.js / TypeScript), backend
               (Python / Node.js), and databases (SQL Server / Oracle PLSQL / PostgreSQL).
@@ -78,7 +78,7 @@ const Hero = () => {
 
             <div className="hero-stats">
               <div className="stat-pill">
-                <span className="stat-num">6+</span>
+                <span className="stat-num">7+</span>
                 <span className="stat-lbl">Years</span>
               </div>
               <div className="stat-sep"></div>

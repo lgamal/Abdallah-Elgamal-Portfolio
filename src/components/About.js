@@ -70,7 +70,7 @@ const About = () => {
 
               <div className="about-stats">
                 <div className="stat">
-                  <div className="stat-number">6+</div>
+                  <div className="stat-number">7+</div>
                   <div className="stat-label">Years at Chubb Life</div>
                 </div>
                 <div className="stat">
