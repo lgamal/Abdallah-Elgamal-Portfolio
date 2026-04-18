@@ -14,7 +14,7 @@ const Experience = () => {
       type: "Current Role",
       typeColor: "#059669",
       highlights: [
-        "Owns end-to-end architecture and delivery of a nationwide Agency Digital Application Platform (React Native), fully integrated with the Life Core System",
+        "Owns end-to-end architecture and delivery of a nationwide Agency Digital Application Platform (React Native) serving insurance agents across Egypt's full branch network, fully integrated with the Life Core System",
         "Defines system architecture, API contracts, data models, security standards, and integration strategies for enterprise insurance platforms",
         "Coordinates Mobile App, Life Core System, Actuarial, Operations, Sales teams, and external vendors",
         "Plans delivery milestones and dependencies in JIRA — project delivered, pending FRA regulatory approval",
@@ -34,7 +34,7 @@ const Experience = () => {
         "Designed and built a Full-Stack Group Insurance System (React.js, TypeScript, Node.js, SQL Server) covering Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial",
         "Architected database schemas, REST APIs, and end-to-end business workflows — led system through UAT with stakeholder sign-off",
         "Built complex SQL queries and financial reports for management, actuarial, and operational analysis",
-        "Delivered full Arabic and English website versions; developed multiple Python automation tools for Finance, Operations, Claims, and Training"
+        "Delivered full Arabic and English website versions; developed 5+ Python automation tools for Finance, Operations, Claims, and Training — eliminating manual workflows across departments"
       ],
       technologies: ["React.js", "TypeScript", "Node.js", "Python", "SQL Server", "Oracle DB", "JWT", "REST API"]
     },

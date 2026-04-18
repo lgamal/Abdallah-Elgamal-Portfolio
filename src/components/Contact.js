@@ -50,7 +50,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: "Location",
-      value: "Cairo, Egypt",
+      value: "Cairo, Egypt · Open to Remote / Relocation",
       link: null
     },
     {

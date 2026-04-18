@@ -73,7 +73,7 @@ const Hero = () => {
 
             <div className="hero-location">
               <FaMapMarkerAlt />
-              <span>Cairo, Egypt · Chubb Life Insurance</span>
+              <span>Cairo, Egypt · Open to Remote / Relocation</span>
             </div>
 
             <div className="hero-stats">

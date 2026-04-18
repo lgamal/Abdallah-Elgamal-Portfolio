@@ -125,6 +125,14 @@ const Skills = () => {
           ))}
         </div>
 
+        <div className="skills-languages card">
+          <h3 className="lang-heading">Languages</h3>
+          <div className="lang-row">
+            <span className="lang-item">Arabic <span className="lang-level">Native</span></span>
+            <span className="lang-item">English <span className="lang-level">Fluent</span></span>
+          </div>
+        </div>
+
         <div className="skills-competencies card">
           <h3 className="competencies-heading">Core Competencies</h3>
           <div className="competency-tags">
