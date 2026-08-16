@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Abdallah-Elgamal-Portfolio/static/css/main.0dc54edd.css",
-    "main.js": "/Abdallah-Elgamal-Portfolio/static/js/main.1995a3ef.js",
-    "static/media/Abdallah-Elgamal_Resume.pdf": "/Abdallah-Elgamal-Portfolio/static/media/Abdallah-Elgamal_Resume.3310b34a9c60f8bb6692.pdf",
+    "main.css": "/Abdallah-Elgamal-Portfolio/static/css/main.77b31b49.css",
+    "main.js": "/Abdallah-Elgamal-Portfolio/static/js/main.002b9654.js",
     "index.html": "/Abdallah-Elgamal-Portfolio/index.html",
-    "main.0dc54edd.css.map": "/Abdallah-Elgamal-Portfolio/static/css/main.0dc54edd.css.map",
-    "main.1995a3ef.js.map": "/Abdallah-Elgamal-Portfolio/static/js/main.1995a3ef.js.map"
+    "main.77b31b49.css.map": "/Abdallah-Elgamal-Portfolio/static/css/main.77b31b49.css.map",
+    "main.002b9654.js.map": "/Abdallah-Elgamal-Portfolio/static/js/main.002b9654.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dc54edd.css",
-    "static/js/main.1995a3ef.js"
+    "static/css/main.77b31b49.css",
+    "static/js/main.002b9654.js"
   ]
 }
