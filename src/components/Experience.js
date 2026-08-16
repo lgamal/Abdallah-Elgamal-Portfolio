@@ -21,8 +21,9 @@ const Experience = () => {
         "Runs a hybrid delivery model — internal stage-gate governance wrapped around vendor delivery — owning quality gates and exit criteria for Information Security approvals and API Studio onboarding, and clearing them without slipping milestones",
         "Coordinates integration workstreams across the core policy system, payment gateway, identity/e-signature provider, identity management, and notification platforms; identifies and specifies the API surface each party must expose or consume",
         "Manages acceptance of vendor deliverables against agreed criteria, with input to vendor contracts, SLAs, and commercial terms; tracks effort and budget against plan",
-        "Owns end-to-end architecture and delivery of the platform (React Native) serving insurance agents across Egypt's full branch network, fully integrated with the Life Core System",
-        "Leads the Group Insurance digitisation programme as owner from the software side — a phased transformation from manual, paper-based operations to an end-to-end system",
+        "Owns the architecture and hands-on development of the platform (React Native) serving insurance agents across Egypt's full branch network, fully integrated with the Life Core System",
+        "Designed, built, and delivered the PSS Email Sender policy-document automation platform single-handedly — requirements gathering with Operations, solution architecture, full-stack build (React / Python / Flask), rollout, and post-go-live support — replacing a manual workflow in-house at zero third-party cost",
+        "Leads and personally builds the Group Insurance digitisation programme as sole owner from the software side — architecture, full-stack development, and phased delivery of a transformation from manual, paper-based operations to an end-to-end system",
         "Plans milestones, dependencies, and releases in JIRA; mentors junior engineers and fresh graduates, enforcing coding standards and architecture consistency"
       ],
       technologies: ["React Native", "Node.js", "REST API", "SQL Server", "Azure AD B2C", "eBao", "Paymob", "Valify", "JIRA"]
@@ -36,9 +37,9 @@ const Experience = () => {
       type: "3 Years",
       typeColor: "#1e40af",
       highlights: [
-        "Owned the FRA Regulatory Integration project end to end — from regulation analysis and requirements definition through API specification, build, security review, go-live, and post-go-live support — establishing the automated data-submission channel to the Egyptian Financial Regulatory Authority",
-        "Initiated and led the Group Insurance digitisation programme, running discovery workshops with Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial to agree scope, deliverables, and success criteria, converting a fully manual, paper-based business into a phased delivery plan",
-        "Delivered a data migration workstream from legacy MS Access systems to SQL Server on the Decoding Management System — migration strategy, reconciliation, and business sign-off — with RBAC, real-time notifications, and full audit trails",
+        "Designed, built, and owned the FRA Regulatory Integration project end to end and single-handedly — from regulation analysis and requirements definition through API specification, Python development, security review, go-live, and post-go-live support — establishing the automated data-submission channel to the Egyptian Financial Regulatory Authority",
+        "Initiated, architected, and built the Group Insurance digitisation programme (React.js, TypeScript, Node.js, SQL Server), running discovery workshops with Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial to agree scope, deliverables, and success criteria, converting a fully manual, paper-based business into a phased delivery plan",
+        "Built the Decoding Management System single-handedly and delivered its data migration workstream from legacy MS Access to SQL Server — migration strategy, reconciliation, and business sign-off — with RBAC, real-time notifications, and full audit trails",
         "Architected database schemas, REST APIs, and end-to-end business workflows, translating regulatory, actuarial, and operational requirements into system rules",
         "Produced management, actuarial, and operational reporting from complex SQL data sets to support decision-making and regulatory positions",
         "Delivered full Arabic and English website versions; developed 5+ Python automation tools for Finance, Operations, Claims, and Training — eliminating manual workflows across departments"

@@ -93,6 +93,14 @@ const About = () => {
                 mobile store release teams. I hold vendors to plan, own the quality gates, keep the RAID log
                 honest, and write the minutes that keep the critical path clear.
               </p>
+              <p className="about-description">
+                I never stopped building. The <strong>FRA regulatory integration</strong>, the
+                <strong> Decoding Management System</strong>, and the <strong>PSS Email Sender</strong> I
+                designed and wrote single-handedly, end to end; the <strong>Group Insurance system</strong> I
+                architect and build as its sole software owner. That mix is the point — I can hold the
+                delivery plan and the codebase at the same time, which is why I'm equally at home as a
+                Lead Software Engineer, a Solutions Architect, or a Project Manager.
+              </p>
 
               <div className="about-stats">
                 <div className="stat">

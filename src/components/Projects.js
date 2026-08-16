@@ -21,11 +21,12 @@ const Projects = () => {
       title: 'Agency Digital Application Platform',
       subtitle: 'Nationwide Platform · Vendor-Driven Delivery · 8 Parties Coordinated',
       description:
-        'Led this nationwide platform as both solutions architect and project manager — enabling insurance agents across Egypt to submit digital life applications, fully integrated with the eBao Life Core System, with digital identity verification, e-signature, and online payment. Delivery ran through external vendors and internal platform teams under internal stage-gate governance.',
+        'Led this nationwide platform as solutions architect, lead engineer, and project manager — enabling insurance agents across Egypt to submit digital life applications, fully integrated with the eBao Life Core System, with digital identity verification, e-signature, and online payment. I own the architecture and hands-on development, while third-party integrations run through external vendors under internal stage-gate governance.',
       technologies: ['React Native', 'Node.js', 'SQL Server', 'JWT', 'REST API', 'eBao', 'Paymob', 'Valify', 'Azure AD B2C', 'JIRA'],
       achievements: [
         'Owned vendor management across 8 parties — eBao, Paymob, Valify, Azure AD B2C, Information Security, API Studio, Azure push notifications, mobile stores',
         '100+ meetings & stand-ups led, with minutes, decision logs, RAID items & escalation',
+        'Owned the architecture, API contracts, data models & hands-on React Native development',
         'Owned quality gates and exit criteria — cleared Information Security approvals and API Studio onboarding on schedule',
         'Coordinated integration workstreams across core policy, payments, identity, e-signature & notification platforms',
         'Delivered on time — pending FRA regulatory approval',
@@ -44,10 +45,11 @@ const Projects = () => {
       title: 'Group Insurance Digitisation Programme',
       subtitle: 'Employee Benefits / People Solutions · Manual → Digital · React.js · TypeScript · Node.js · SQL Server',
       description:
-        'Multi-phase programme digitising the Group Insurance (employee benefits) business from a fully manual, paper-based operation into an end-to-end system spanning Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial. I lead this programme as owner from the software side — requirements definition, architecture, delivery planning, and phased rollout.',
+        'Multi-phase programme digitising the Group Insurance (employee benefits) business from a fully manual, paper-based operation into an end-to-end system spanning Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial. I lead and personally build this programme as sole owner from the software side — requirements definition, architecture, full-stack development, and phased rollout.',
       technologies: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'SQL Server', 'JWT'],
       achievements: [
-        'Owner from the software side — requirements, architecture, delivery plan & rollout',
+        'Sole software owner — requirements, architecture, full-stack build & rollout',
+        'Architected the DB schema, REST APIs & business logic end to end',
         'Replacing a fully manual, paper-based business with an end-to-end digital system',
         'Role-based workflows across 6 insurance departments',
       ],
@@ -92,10 +94,10 @@ const Projects = () => {
       title: 'FRA Regulatory Integration & Compliance System',
       subtitle: 'Python · REST API · PostgreSQL',
       description:
-        'Owned end to end: the automated channel that validates, transforms, and securely submits insurance data to the Egyptian Financial Regulatory Authority with full audit trails — from regulation analysis and API specification through build, security review, go-live, and ongoing compliance support.',
+        'Designed, built, and owned end to end and single-handedly: the automated channel that validates, transforms, and securely submits insurance data to the Egyptian Financial Regulatory Authority with full audit trails — from regulation analysis and API specification through Python development, security review, go-live, and ongoing compliance support.',
       technologies: ['Python', 'REST API', 'OAuth', 'PostgreSQL', 'SQL Server', 'Audit Logging'],
       achievements: [
-        'Owned the full lifecycle — regulation analysis, requirements, API specification, build, security review, go-live',
+        'Built and owned the full lifecycle solo — regulation analysis, API specification, development, security review, go-live',
         'Translated FRA regulatory requirements into technical data contracts, validation rules & audit evidence',
         'Secure FRA REST API integration (GET/POST) with auth & audit trail',
         'Eliminated manual regulatory reporting workflows',
@@ -119,7 +121,7 @@ const Projects = () => {
         'Desktop automation platform replacing a manual policy document delivery workflow — reads eBao Crystal Report output, auto-matches policy PDFs, attaches brochures, and sends personalised customer emails in a single click. Built entirely in-house at zero third-party cost.',
       technologies: ['React', 'Python', 'Flask', 'MS Access', 'REST API', 'RBAC', 'Crystal Reports', 'eBao Integration'],
       achievements: [
-        'Owned end to end — requirements with Operations, build, rollout & post-go-live support',
+        'Designed & built single-handedly — requirements with Operations, full-stack build, rollout & post-go-live support',
         'Eliminated hours of manual work per batch — full policy-to-email pipeline automated end-to-end',
         'Role-based access (Admin / Operator / Manager) with complete audit trail for compliance traceability',
         'Manager reconciliation dashboard tracking live success rates — measurable benefits realization after go-live',
@@ -208,7 +210,7 @@ const Projects = () => {
         'Enterprise web app migrating internal decoding operations from MS Access to SQL Server with RBAC, real-time email notifications, file uploads, and comprehensive audit trails.',
       technologies: ['Next.js', 'React', 'TypeScript', 'SQL Server', 'Node.js', 'JWT', 'Nodemailer'],
       achievements: [
-        'Owned end to end — requirements, migration strategy, build & rollout',
+        'Designed & built single-handedly — requirements, migration strategy, build & rollout',
         'Legacy MS Access → SQL Server migration with reconciliation & business sign-off',
         'Role-based Access Control — BC Users, Operations, Admin',
         'Real-time email notifications, file uploads & Excel export',

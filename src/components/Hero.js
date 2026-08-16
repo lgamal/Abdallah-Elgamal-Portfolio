@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import './Hero.css';
-import resume from './Abdallah-Elgamal_Resume.pdf';
 
 const TITLES = [
   'Lead Software Engineer',
@@ -118,8 +117,14 @@ const Hero = () => {
               <a href="mailto:abdallahabdelaziiz@gmail.com" className="social-icon" title="Email">
                 <FaEnvelope />
               </a>
-              <a href={resume} download className="social-icon" title="Download Resume">
-                <FaFilePdf />
+              <a
+                href={`${process.env.PUBLIC_URL}/resume.html`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                title="View Resume (printable / save as PDF)"
+              >
+                <FaFileAlt />
               </a>
             </div>
           </div>
