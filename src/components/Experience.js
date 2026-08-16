@@ -9,31 +9,38 @@ const Experience = () => {
     {
       id: 0,
       role: "Lead Software Engineer",
+      subRole: "Acting Project Manager — Agency Digital Application Platform & Group Insurance Programme",
       company: "Chubb Life Insurance",
       period: "Apr 2025 – Present",
       type: "Current Role",
       typeColor: "#059669",
       highlights: [
-        "Owns end-to-end architecture and delivery of a nationwide Agency Digital Application Platform (React Native) serving insurance agents across Egypt's full branch network, fully integrated with the Life Core System",
-        "Defines system architecture, API contracts, data models, security standards, and integration strategies for enterprise insurance platforms",
-        "Coordinates Mobile App, Life Core System, Actuarial, Operations, Sales teams, and external vendors",
-        "Plans delivery milestones and dependencies in JIRA — project delivered, pending FRA regulatory approval",
-        "Mentors junior engineers and fresh graduates, enforcing coding standards and architecture consistency"
+        "Acts as Project Manager for the nationwide Agency Digital Application Platform — owning the delivery roadmap, requirements definition with business stakeholders, scope control, and the critical path through to FRA regulatory approval",
+        "Owns vendor management across the delivery lifecycle for eight internal teams and external vendors — eBao (Life Core System), Paymob (payment integration), Valify (FRA-authorised identity verification & digital signature), the Azure AD B2C / Entra ID team, Information Security, API Studio (API onboarding), the Azure push-notification team, and mobile store release teams — holding each to plan, quality standards, and agreed milestones",
+        "Led 100+ meetings and stand-ups across those parties, maintaining meeting minutes, decision logs, action trackers, and RAID items with disciplined escalation of risks and dependencies",
+        "Runs a hybrid delivery model — internal stage-gate governance wrapped around vendor delivery — owning quality gates and exit criteria for Information Security approvals and API Studio onboarding, and clearing them without slipping milestones",
+        "Coordinates integration workstreams across the core policy system, payment gateway, identity/e-signature provider, identity management, and notification platforms; identifies and specifies the API surface each party must expose or consume",
+        "Manages acceptance of vendor deliverables against agreed criteria, with input to vendor contracts, SLAs, and commercial terms; tracks effort and budget against plan",
+        "Owns end-to-end architecture and delivery of the platform (React Native) serving insurance agents across Egypt's full branch network, fully integrated with the Life Core System",
+        "Leads the Group Insurance digitisation programme as owner from the software side — a phased transformation from manual, paper-based operations to an end-to-end system",
+        "Plans milestones, dependencies, and releases in JIRA; mentors junior engineers and fresh graduates, enforcing coding standards and architecture consistency"
       ],
-      technologies: ["React Native", "Node.js", "REST API", "SQL Server", "Azure", "JIRA"]
+      technologies: ["React Native", "Node.js", "REST API", "SQL Server", "Azure AD B2C", "eBao", "Paymob", "Valify", "JIRA"]
     },
     {
       id: 1,
       role: "Senior Software Engineer",
+      subRole: "Project Lead — FRA Regulatory Integration & Group Insurance Digitisation",
       company: "Chubb Life Insurance",
       period: "Apr 2022 – Mar 2025",
       type: "3 Years",
       typeColor: "#1e40af",
       highlights: [
-        "Led FRA compliance systems: Python-based data pipelines validating, transforming, and securely submitting insurance data to the Egyptian Financial Regulatory Authority",
-        "Designed and built a Full-Stack Group Insurance System (React.js, TypeScript, Node.js, SQL Server) covering Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial",
-        "Architected database schemas, REST APIs, and end-to-end business workflows — led system through UAT with stakeholder sign-off",
-        "Built complex SQL queries and financial reports for management, actuarial, and operational analysis",
+        "Owned the FRA Regulatory Integration project end to end — from regulation analysis and requirements definition through API specification, build, security review, go-live, and post-go-live support — establishing the automated data-submission channel to the Egyptian Financial Regulatory Authority",
+        "Initiated and led the Group Insurance digitisation programme, running discovery workshops with Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial to agree scope, deliverables, and success criteria, converting a fully manual, paper-based business into a phased delivery plan",
+        "Delivered a data migration workstream from legacy MS Access systems to SQL Server on the Decoding Management System — migration strategy, reconciliation, and business sign-off — with RBAC, real-time notifications, and full audit trails",
+        "Architected database schemas, REST APIs, and end-to-end business workflows, translating regulatory, actuarial, and operational requirements into system rules",
+        "Produced management, actuarial, and operational reporting from complex SQL data sets to support decision-making and regulatory positions",
         "Delivered full Arabic and English website versions; developed 5+ Python automation tools for Finance, Operations, Claims, and Training — eliminating manual workflows across departments"
       ],
       technologies: ["React.js", "TypeScript", "Node.js", "Python", "SQL Server", "Oracle DB", "JWT", "REST API"]
@@ -41,12 +48,14 @@ const Experience = () => {
     {
       id: 2,
       role: "Software Engineer",
+      subRole: "Automation & Process Digitisation",
       company: "Chubb Life Insurance",
       period: "May 2019 – Mar 2022",
       type: "3 Years",
       typeColor: "#6b7280",
       highlights: [
         "Developed and maintained enterprise applications using Python, Swift (iOS), VB.NET, and SQL",
+        "Gathered requirements directly from Finance, Operations, and Training users — translating manual departmental processes into automated tools, and running rollout, user training, and post-deployment support",
         "Built iOS applications using Firebase for authentication and backend services",
         "Created automation tools using Excel Power Query and VBA to streamline reporting workflows",
         "Contributed to software architecture decisions, data governance, and integration standards",
@@ -89,6 +98,7 @@ const Experience = () => {
                         {exp.type}
                       </span>
                     </div>
+                    {exp.subRole && <p className="timeline-subrole">{exp.subRole}</p>}
                     <p className="timeline-company">{exp.company}</p>
                     <p className="timeline-period">{exp.period}</p>
                   </div>

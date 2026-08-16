@@ -178,6 +178,17 @@
   color: #64748b;
 }
 
+/* Two-up quality cards on desktop. The card is a flex row (icon | title |
+   description), which needs the text to wrap onto its own lines once each
+   card is only half-width — otherwise the description collapses to a
+   one-word-per-line column. */
+@media (min-width: 1025px) {
+  .qualities-grid { grid-template-columns: repeat(2, 1fr); }
+  .quality-card { flex-wrap: wrap; row-gap: 0.5rem; }
+  .quality-card .quality-title,
+  .quality-card .quality-description { flex-basis: 100%; }
+}
+
 @media (max-width: 1024px) {
   .about-content { grid-template-columns: 1fr; gap: 2.5rem; }
 }

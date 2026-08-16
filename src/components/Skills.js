@@ -1,6 +1,8 @@
 import React from 'react';
 import {
-  FaReact, FaNodeJs, FaPython, FaSwift, FaDocker, FaGitAlt, FaDatabase, FaCloud
+  FaReact, FaNodeJs, FaPython, FaSwift, FaDocker, FaGitAlt, FaDatabase, FaCloud,
+  FaProjectDiagram, FaClipboardList, FaExclamationTriangle, FaHandshake,
+  FaCheckDouble, FaRocket, FaChartLine, FaTasks, FaCoins
 } from 'react-icons/fa';
 import {
   SiTypescript, SiNextdotjs, SiRedux, SiVite, SiExpress, SiKotlin,
@@ -11,6 +13,39 @@ import './Skills.css';
 
 const Skills = () => {
   const categories = [
+    {
+      id: 'delivery',
+      label: 'Project & Delivery Management',
+      color: '#b45309',
+      skills: [
+        { name: 'Project Planning & Roadmaps', icon: <FaProjectDiagram /> },
+        { name: 'Requirements Definition', icon: <FaClipboardList /> },
+        { name: 'RAID Logs & Risk Escalation', icon: <FaExclamationTriangle /> },
+        { name: 'Vendor Management & SLAs', icon: <FaHandshake /> },
+        { name: 'Quality Gates & Exit Criteria', icon: <FaCheckDouble /> },
+        { name: 'UAT, Go-Live & Hypercare', icon: <FaRocket /> },
+        { name: 'Stakeholder & Steering Reporting', icon: <FaChartLine /> },
+        { name: 'Agile / Waterfall / Hybrid Delivery', icon: <FaTasks /> },
+        { name: 'Budget & Effort vs Actual', icon: <FaCoins /> },
+        { name: 'Jira / Confluence / MS Project', icon: <SiJira /> },
+      ]
+    },
+    {
+      id: 'insurance',
+      label: 'Insurance Domain & Integrations',
+      color: '#0f766e',
+      skills: [
+        { name: 'eBao Life Core System', icon: null },
+        { name: 'FRA Regulatory APIs & Reporting', icon: null },
+        { name: 'Life & Group / People Solutions', icon: null },
+        { name: 'Valify (eKYC & Digital Signature)', icon: null },
+        { name: 'Paymob Payment Gateway', icon: null },
+        { name: 'Azure AD B2C / Entra ID', icon: null },
+        { name: 'API Studio (Gateway Onboarding)', icon: null },
+        { name: 'Data Migration & Reconciliation', icon: null },
+        { name: 'Document Management & Delivery', icon: null },
+      ]
+    },
     {
       id: 'frontend',
       label: 'Frontend',
@@ -81,6 +116,9 @@ const Skills = () => {
       skills: [
         { name: 'Firebase', icon: <SiFirebase /> },
         { name: 'JIRA', icon: <SiJira /> },
+        { name: 'Confluence', icon: null },
+        { name: 'MS Project', icon: null },
+        { name: 'Tableau / Power BI', icon: <FaChartLine /> },
         { name: 'Postman', icon: <SiPostman /> },
         { name: 'Swagger', icon: <SiSwagger /> },
         { name: 'GitLab', icon: <FaGitAlt /> },
@@ -89,6 +127,15 @@ const Skills = () => {
   ];
 
   const coreCompetencies = [
+    'Project Management',
+    'Digital Transformation',
+    'Vendor-Driven Delivery',
+    'Requirements Definition',
+    'RAID & Risk Management',
+    'Quality Gates & Go-Live Readiness',
+    'Hypercare & Benefits Realization',
+    'Steering & Executive Reporting',
+    'Data Migration & Reconciliation',
     'Solution Architecture',
     'Full-Stack Development',
     'Cross-Platform Mobile',
@@ -97,7 +144,6 @@ const Skills = () => {
     'Technical Leadership',
     'Database Design',
     'Agile Delivery',
-    'Digital Transformation',
     'Code Review & Mentoring',
   ];
 

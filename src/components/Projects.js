@@ -19,14 +19,16 @@ const Projects = () => {
       badgeColor: '#f59e0b',
       filter: 'Production',
       title: 'Agency Digital Application Platform',
-      subtitle: 'Nationwide React Native Insurance Platform',
+      subtitle: 'Nationwide Platform · Vendor-Driven Delivery · 8 Parties Coordinated',
       description:
-        'Led end-to-end architecture and delivery of a nationwide platform enabling insurance agents across Egypt to submit digital life insurance applications, fully integrated with the Life Core System.',
-      technologies: ['React Native', 'Node.js', 'SQL Server', 'JWT', 'REST API', 'Azure', 'JIRA'],
+        'Led this nationwide platform as both solutions architect and project manager — enabling insurance agents across Egypt to submit digital life applications, fully integrated with the eBao Life Core System, with digital identity verification, e-signature, and online payment. Delivery ran through external vendors and internal platform teams under internal stage-gate governance.',
+      technologies: ['React Native', 'Node.js', 'SQL Server', 'JWT', 'REST API', 'eBao', 'Paymob', 'Valify', 'Azure AD B2C', 'JIRA'],
       achievements: [
-        'Owned architecture, API contracts, data models & security standards',
-        'Coordinated Mobile, Actuarial, Operations, Sales & vendor teams',
-        'Delivered on-time — pending FRA regulatory approval',
+        'Owned vendor management across 8 parties — eBao, Paymob, Valify, Azure AD B2C, Information Security, API Studio, Azure push notifications, mobile stores',
+        '100+ meetings & stand-ups led, with minutes, decision logs, RAID items & escalation',
+        'Owned quality gates and exit criteria — cleared Information Security approvals and API Studio onboarding on schedule',
+        'Coordinated integration workstreams across core policy, payments, identity, e-signature & notification platforms',
+        'Delivered on time — pending FRA regulatory approval',
       ],
       github: null,
       live: null,
@@ -36,18 +38,45 @@ const Projects = () => {
     },
     {
       id: 'group-insurance',
-      badge: 'Production · UAT Complete',
-      badgeColor: '#10b981',
+      badge: 'In Progress · Phased Delivery',
+      badgeColor: '#3b82f6',
       filter: 'Production',
-      title: 'Group Insurance Full-Stack System',
-      subtitle: 'React.js · TypeScript · Node.js · SQL Server',
+      title: 'Group Insurance Digitisation Programme',
+      subtitle: 'Employee Benefits / People Solutions · Manual → Digital · React.js · TypeScript · Node.js · SQL Server',
       description:
-        'Full-stack system covering the complete insurance lifecycle — Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial — from DB schema design to UAT sign-off.',
+        'Multi-phase programme digitising the Group Insurance (employee benefits) business from a fully manual, paper-based operation into an end-to-end system spanning Group Sales, Underwriting, Operations, Claims, Collections, and Actuarial. I lead this programme as owner from the software side — requirements definition, architecture, delivery planning, and phased rollout.',
       technologies: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'SQL Server', 'JWT'],
       achievements: [
+        'Owner from the software side — requirements, architecture, delivery plan & rollout',
+        'Replacing a fully manual, paper-based business with an end-to-end digital system',
         'Role-based workflows across 6 insurance departments',
-        'Architected DB schema, REST APIs & business logic end-to-end',
-        'Led UAT with full business-stakeholder sign-off',
+      ],
+      phases: [
+        {
+          name: 'Phase 1 — Discovery & Requirements Definition',
+          status: 'Complete',
+          detail: 'Mapped the manual process end to end, ran workshops with all six departments, agreed scope, deliverables & success criteria',
+        },
+        {
+          name: 'Phase 2 — Core Build: Sales & Underwriting',
+          status: 'Complete',
+          detail: 'Data model, RBAC, quotation and policy issuance, underwriting workflow',
+        },
+        {
+          name: 'Phase 3 — Operations, Claims & Collections',
+          status: 'In Progress',
+          detail: 'Endorsements, claims lifecycle, premium collection and reconciliation',
+        },
+        {
+          name: 'Phase 4 — Actuarial, Reporting & Data Migration',
+          status: 'Planned',
+          detail: 'Actuarial extracts, management reporting, legacy data migration with reconciliation and sign-off',
+        },
+        {
+          name: 'Phase 5 — UAT, Go-Live & Hypercare',
+          status: 'Planned',
+          detail: 'Business UAT against exit criteria, go-live readiness, cutover, hypercare and closure',
+        },
       ],
       github: null,
       live: null,
@@ -60,12 +89,14 @@ const Projects = () => {
       badge: 'Production · Live',
       badgeColor: '#ef4444',
       filter: 'Production',
-      title: 'FRA Regulatory Compliance System',
+      title: 'FRA Regulatory Integration & Compliance System',
       subtitle: 'Python · REST API · PostgreSQL',
       description:
-        'Python-based data pipeline that validates, transforms, and securely submits insurance data to the Egyptian Financial Regulatory Authority with full audit trails.',
+        'Owned end to end: the automated channel that validates, transforms, and securely submits insurance data to the Egyptian Financial Regulatory Authority with full audit trails — from regulation analysis and API specification through build, security review, go-live, and ongoing compliance support.',
       technologies: ['Python', 'REST API', 'OAuth', 'PostgreSQL', 'SQL Server', 'Audit Logging'],
       achievements: [
+        'Owned the full lifecycle — regulation analysis, requirements, API specification, build, security review, go-live',
+        'Translated FRA regulatory requirements into technical data contracts, validation rules & audit evidence',
         'Secure FRA REST API integration (GET/POST) with auth & audit trail',
         'Eliminated manual regulatory reporting workflows',
         'Reduced operational risk for FRA compliance submission',
@@ -88,9 +119,10 @@ const Projects = () => {
         'Desktop automation platform replacing a manual policy document delivery workflow — reads eBao Crystal Report output, auto-matches policy PDFs, attaches brochures, and sends personalised customer emails in a single click. Built entirely in-house at zero third-party cost.',
       technologies: ['React', 'Python', 'Flask', 'MS Access', 'REST API', 'RBAC', 'Crystal Reports', 'eBao Integration'],
       achievements: [
+        'Owned end to end — requirements with Operations, build, rollout & post-go-live support',
         'Eliminated hours of manual work per batch — full policy-to-email pipeline automated end-to-end',
         'Role-based access (Admin / Operator / Manager) with complete audit trail for compliance traceability',
-        'Manager reconciliation dashboard with live success rates and date/user filtering for month-end closing',
+        'Manager reconciliation dashboard tracking live success rates — measurable benefits realization after go-live',
         'Arabic RTL + English email support; admin-configurable templates and one-click Excel export',
       ],
       github: null,
@@ -143,27 +175,6 @@ const Projects = () => {
       icon: <FaShoppingCart />,
       iconBg: 'linear-gradient(135deg,#be185d,#0f172a)',
     },
-    {
-      id: 'agency-platform-mobile',
-      badge: 'Production · React Native',
-      badgeColor: '#f59e0b',
-      filter: 'Mobile',
-      title: 'Agency Digital Application Platform',
-      subtitle: 'React Native · Life Core API',
-      description:
-        'Nationwide React Native app for insurance agents across Egypt — see Production entry for full details.',
-      technologies: ['React Native', 'Node.js', 'JWT', 'SQL Server', 'Azure'],
-      achievements: [
-        'Cross-platform (iOS + Android) with Life Core System integration',
-        'FRA regulatory approval pending',
-      ],
-      github: null,
-      live: null,
-      icon: <FaMobile />,
-      iconBg: 'linear-gradient(135deg,#1e40af,#0f172a)',
-      private: true,
-      hidden: true,
-    },
 
     /* ── OPEN SOURCE ─────────────────────────────────────────────── */
     {
@@ -192,14 +203,15 @@ const Projects = () => {
       badgeColor: '#3b82f6',
       filter: 'Open Source',
       title: 'Decoding Management System',
-      subtitle: 'Next.js · TypeScript · SQL Server',
+      subtitle: 'Legacy Data Migration · Next.js · TypeScript · SQL Server',
       description:
         'Enterprise web app migrating internal decoding operations from MS Access to SQL Server with RBAC, real-time email notifications, file uploads, and comprehensive audit trails.',
       technologies: ['Next.js', 'React', 'TypeScript', 'SQL Server', 'Node.js', 'JWT', 'Nodemailer'],
       achievements: [
+        'Owned end to end — requirements, migration strategy, build & rollout',
+        'Legacy MS Access → SQL Server migration with reconciliation & business sign-off',
         'Role-based Access Control — BC Users, Operations, Admin',
         'Real-time email notifications, file uploads & Excel export',
-        'Database migration from MS Access to SQL Server',
       ],
       github: 'https://github.com/lgamal/Decoding',
       live: null,
@@ -325,8 +337,8 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
         <p className="section-subtitle">
-          From FRA-regulated production platforms to multi-tenant ERP SaaS and cross-platform mobile apps
-          — each project represents real business impact.
+          From FRA-regulated compliance integrations and multi-phase digital transformation programmes
+          to multi-tenant ERP SaaS and cross-platform mobile — each project represents real business impact.
         </p>
 
         {/* Filter Tabs */}
@@ -412,6 +424,25 @@ const ProjectCard = ({ project, index }) => (
           <li key={i}>{a}</li>
         ))}
       </ul>
+
+      {project.phases && (
+        <div className="project-phases">
+          <span className="phases-label">Delivery Roadmap</span>
+          {project.phases.map((p) => (
+            <div
+              key={p.name}
+              className={`phase-row phase-${p.status.toLowerCase().replace(/\s/g, '-')}`}
+            >
+              <span className="phase-dot"></span>
+              <div className="phase-body">
+                <span className="phase-name">{p.name}</span>
+                <span className="phase-status">{p.status}</span>
+                <span className="phase-detail">{p.detail}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="project-tech-row">
         {project.technologies.map((t, i) => (

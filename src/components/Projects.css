@@ -217,6 +217,117 @@
   top: 2px;
 }
 
+/* ── Delivery roadmap (phased projects) ─────────────────────── */
+.project-phases {
+  margin: 0 0 1rem 0;
+  padding: 0.85rem 0.9rem 0.6rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.phases-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1e40af;
+  margin-bottom: 0.6rem;
+}
+
+.phase-row {
+  position: relative;
+  display: flex;
+  gap: 0.6rem;
+  padding-bottom: 0.7rem;
+}
+
+.phase-row:last-child {
+  padding-bottom: 0;
+}
+
+/* Connector line between dots — omitted on the last row */
+.phase-row:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  bottom: 0;
+  width: 1px;
+  background: #e2e8f0;
+}
+
+.phase-dot {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: #94a3b8;
+  z-index: 1;
+}
+
+.phase-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.phase-name {
+  font-size: 0.79rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.phase-status {
+  font-size: 0.63rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1px 6px;
+  border-radius: 50px;
+  background: #94a3b815;
+  color: #64748b;
+  border: 1px solid #94a3b840;
+}
+
+.phase-detail {
+  flex-basis: 100%;
+  font-size: 0.76rem;
+  color: #475569;
+  line-height: 1.45;
+}
+
+/* Status variants */
+.phase-complete .phase-dot { background: #10b981; }
+.phase-complete .phase-status {
+  background: #10b98115;
+  color: #059669;
+  border-color: #10b98140;
+}
+
+.phase-in-progress .phase-dot {
+  background: #3b82f6;
+  box-shadow: 0 0 0 0 #3b82f680;
+  animation: phasePulse 2.2s ease-out infinite;
+}
+.phase-in-progress .phase-status {
+  background: #3b82f615;
+  color: #1e40af;
+  border-color: #3b82f640;
+}
+
+@keyframes phasePulse {
+  70%  { box-shadow: 0 0 0 6px #3b82f600; }
+  100% { box-shadow: 0 0 0 0 #3b82f600; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phase-in-progress .phase-dot { animation: none; }
+}
+
 .project-tech-row {
   display: flex;
   flex-wrap: wrap;

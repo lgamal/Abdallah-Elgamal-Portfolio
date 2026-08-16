@@ -98,6 +98,14 @@
   letter-spacing: 0.05em;
 }
 
+.timeline-subrole {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin: 0.15rem 0 0.1rem;
+  letter-spacing: 0.01em;
+}
+
 .timeline-company {
   font-size: 0.95rem;
   font-weight: 600;

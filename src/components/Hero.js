@@ -68,12 +68,13 @@ const Hero = () => {
               services — across iOS native (Swift / SwiftUI / UIKit), cross-platform mobile
               (KMP / React Native), full-stack web (React / Next.js / TypeScript), backend
               (Python / Node.js), and databases (SQL Server / Oracle PLSQL / PostgreSQL).
-              I own projects end-to-end: architecture, delivery, and compliance.
+              I own projects end to end — requirements, vendor coordination, delivery governance,
+              and regulatory compliance.
             </p>
 
             <div className="hero-location">
               <FaMapMarkerAlt />
-              <span>Cairo, Egypt · Open to Remote / Relocation</span>
+              <span>Cairo, Egypt · Arabic &amp; English · Open to Remote / Relocation</span>
             </div>
 
             <div className="hero-stats">
@@ -85,6 +86,11 @@ const Hero = () => {
               <div className="stat-pill">
                 <span className="stat-num">3</span>
                 <span className="stat-lbl">Production Platforms</span>
+              </div>
+              <div className="stat-sep"></div>
+              <div className="stat-pill">
+                <span className="stat-num">100+</span>
+                <span className="stat-lbl">Stakeholder Meetings Led</span>
               </div>
               <div className="stat-sep"></div>
               <div className="stat-pill">
@@ -131,7 +137,7 @@ const Hero = () => {
             </div>
             <div className="photo-badge photo-badge-2">
               <span className="pb-icon">🏗️</span>
-              <span>Solutions Architect</span>
+              <span>Architect · Delivery Lead</span>
             </div>
             <div className="photo-badge photo-badge-3">
               <span className="pb-icon">🔒</span>

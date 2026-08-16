@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaLightbulb, FaUsers, FaRocket, FaTrophy, FaCertificate } from 'react-icons/fa';
+import { FaCode, FaLightbulb, FaUsers, FaRocket, FaTrophy, FaCertificate, FaTasks, FaHandshake } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -12,12 +12,22 @@ const About = () => {
     {
       icon: <FaLightbulb />,
       title: "Digital Transformation",
-      description: "Led nationwide digital transformation at Chubb Life — replacing manual workflows with scalable, FRA-compliant production systems."
+      description: "Led digital transformation at Chubb Life Insurance Egypt — replacing manual, paper-based departmental operations with scalable, FRA-compliant production systems."
+    },
+    {
+      icon: <FaTasks />,
+      title: "Project & Delivery Management",
+      description: "Own delivery across the full lifecycle — requirements definition, phased roadmaps, RAID logs, milestone and dependency tracking in JIRA, quality gates and go-live readiness, through to hypercare and benefits tracking."
+    },
+    {
+      icon: <FaHandshake />,
+      title: "Vendor & Third-Party Management",
+      description: "Single point of contact across eBao, Paymob, Valify, Azure AD B2C, Information Security, API Studio, Azure push notifications, and mobile store teams — holding eight parties to one plan, agreed milestones, and quality standards."
     },
     {
       icon: <FaUsers />,
       title: "Cross-Functional Leadership",
-      description: "Coordinated Mobile App, Life Core System, Actuarial, Operations, Sales teams, and external vendors to deliver on-time and on-spec."
+      description: "Coordinated Mobile App, Life Core System, Actuarial, Operations, and Sales teams alongside external vendors and platform teams — aligning business, technical, and compliance stakeholders to deliver on-time and on-spec."
     },
     {
       icon: <FaRocket />,
@@ -32,6 +42,12 @@ const About = () => {
       title: "Most Innovative Employee",
       detail: "Chubb Life Insurance · 2024",
       color: "#f59e0b"
+    },
+    {
+      icon: <FaCertificate />,
+      title: "PMP — In Progress",
+      detail: "Project Management Institute",
+      color: "#0a5a9c"
     },
     {
       icon: <FaCertificate />,
@@ -66,6 +82,16 @@ const About = () => {
                 My work spans the full delivery lifecycle — system design, API architecture, stakeholder
                 alignment, regulatory compliance (FRA), and mentoring engineers. I thrive where technology
                 meets complex business requirements that can't afford to fail.
+              </p>
+              <p className="about-description">
+                Beyond engineering, I run delivery. On our nationwide mobile programme I act as project
+                manager — defining requirements with business stakeholders, owning the roadmap, and
+                leading <strong>100+ meetings and stand-ups</strong> across eight internal teams and external
+                vendors: eBao (Life Core System), Paymob (payments), Valify (FRA-authorised identity
+                verification and digital signature), the Azure AD B2C / Entra ID team, Information Security
+                for gate approvals, API Studio for API onboarding, the Azure push-notification team, and the
+                mobile store release teams. I hold vendors to plan, own the quality gates, keep the RAID log
+                honest, and write the minutes that keep the critical path clear.
               </p>
 
               <div className="about-stats">
